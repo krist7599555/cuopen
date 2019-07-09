@@ -1,29 +1,11 @@
-# cuopen
+# CU open
 
-## Project setup
-```
-yarn install
-```
+[https://cuopen.krist7599555.ml](https://cuopen.krist7599555.ml)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+แสดงผลการแข่งขันกีฬา freshy CU103 จุฬาลงกรณ์ มหาวิทยาลัย
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+![](src/assets/screenshot/2.png)
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ใช้วิธีการจัดการข้อมูลด้วย google sheets
+![](src/assets/screenshot/4.png)
+![](src/assets/screenshot/3.png)

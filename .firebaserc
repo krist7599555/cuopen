@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "cuopen-9a3af"
+  },
+  "targets": {
+    "cuopen-9a3af": {
+      "hosting": {
+        "cuopen": [
+          "deploy"
+        ]
+      }
+    }
+  }
+}

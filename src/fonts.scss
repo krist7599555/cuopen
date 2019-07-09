@@ -1,0 +1,166 @@
+@font-face {
+  font-family: ChulaCharasNew;
+  src: url(~@/assets/fonts/ChulaCharasNew-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: ChulaCharasNew;
+  src: url(~@/assets/fonts/ChulaCharasNew-BoldItalic.woff);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: ChulaCharasNew;
+  src: url(~@/assets/fonts/ChulaCharasNew-Italic.woff);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: ChulaCharasNew;
+  src: url(~@/assets/fonts/ChulaCharasNew.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: CHULALONGKORN;
+  src: url(~@/assets/fonts/CHULALONGKORN-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: CHULALONGKORN;
+  src: url(~@/assets/fonts/CHULALONGKORN-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Black.woff);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-BlackItalic.woff);
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-BoldItalic.woff);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-ExtraBold.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-ExtraBoldItalic.woff);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-ExtraLight.woff);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-ExtraLightItalic.woff);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Italic.woff);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-LightItalic.woff);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-MediumItalic.woff);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-SemiBold.woff);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-SemiBoldItalic.woff);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-Thin.woff);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(~@/assets/fonts/Montserrat-ThinItalic.woff);
+  font-weight: 200;
+  font-style: italic;
+}
+
+body {
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: CHULALONGKORN, ChulaCharasNew, Montserrat, 'Prompt', Roboto, Helvetica, Arial,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Disable Selection */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+h1,
+tbody,
+.cu-font {
+  font-family: CHULALONGKORN, ChulaCharasNew, Montserrat, 'Prompt', Roboto, Helvetica, Arial,
+    sans-serif !important;
+}
