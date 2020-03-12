@@ -14,31 +14,34 @@
 </template>
 
 <script>
-import dayjs from "dayjs";
-import "dayjs/locale/th";
-import IconKind from "./IconKind.vue";
+import 'dayjs/locale/th';
+import IconKind from './IconKind.vue';
 export default {
   components: {
     IconKind
   },
   props: {
-    redTeam: { type: String, default: "-" },
-    blueTeam: { type: String, default: "-" },
-    redScore: { default: "-" },
-    blueScore: { default: "-" },
-    date: { default: "no-date" },
-    time: { default: "no-time" },
-    sport: { default: "no-sport" },
-    kind: { default: "no-kind" },
+    redTeam: { type: String, default: '-' },
+    blueTeam: { type: String, default: '-' },
+    redScore: { default: '-' },
+    blueScore: { default: '-' },
+    date: { default: 'no-date' },
+    time: { default: 'no-time' },
+    sport: { default: 'no-sport' },
+    kind: { default: 'no-kind' },
     showScore: { default: true },
     showTime: { default: false }
   },
   computed: {
     strTime() {
       try {
-        return dayjs(this.time)
-          .locale("th")
-          .format("HH:MM");
+        return this.time;
+        // console.log("TCL: strTime -> this.time", this.time);
+        // const out = dayjs(this.time, { locale: "th" })
+        //   .locale("th")
+        //   .format("HH:mm");
+        // console.log("TCL: strTime -> out", out);
+        // return out;
       } catch {
         return this.time;
       }
@@ -52,11 +55,11 @@ export default {
     },
     winClass() {
       const [r, b] = [this.redScore, this.blueScore];
-      const res = { red: "", blue: "" };
+      const res = { red: '', blue: '' };
       try {
         if (r == b) return res;
-        if (b == "ขาด" || +r > +b) return { red: "icon-winner", blue: "" };
-        if (r == "ขาด" || +r < +b) return { red: "", blue: "icon-winner" };
+        if (b == 'ขาด' || +r > +b) return { red: 'icon-winner', blue: '' };
+        if (r == 'ขาด' || +r < +b) return { red: '', blue: 'icon-winner' };
         return res;
       } catch {
         return res;
@@ -84,14 +87,14 @@ export default {
 }
 
 $days-color: (#da5b59, #ffe150, #df88af, #80ce7b, #fc974f, #62c4eb, #be69b4);
-$days-name: ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+$days-name: ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 .border-7days {
   border: 0px solid black;
   border-width: 0 0 0 5px;
   padding-left: 0.4rem;
   @for $i from 0 to length($days-color) {
     /* unqualified attribute selector is not key */
-    &[day="#{$i}"] {
+    &[day='#{$i}'] {
       &::before {
         content: nth($days-name, $i + 1);
         font-size: 0.7rem;
@@ -106,4 +109,3 @@ $days-name: ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
   }
 }
 </style>
-
